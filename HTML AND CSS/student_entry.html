@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Student Entry</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <table style="width: 100%; height: 5%;border: 2px solid black;text-align: center;">
+            <tr>
+                <td class="logo" ><img src="download.jfif"></td>
+                <td class="heading"><h1>COLLEGE OF ENGINEERING - GUINDY</h1><h4>Anna University, Chennai</h4></td>
+                <td class="logo" ><img src="CEGlogo.jpg"></td>
+            </tr>
+        </table><br><br>
+        <button class="back" onclick="document.location.href='student_log.html'";>
+            BACK
+        </button>
+        <center>
+            <table class="table2">
+                <tr>
+                    <th> Room Type </th>
+                    <th>Room Amt</th>
+                </tr>
+                <tr>
+                    <td>Single Room</td>
+                    <td>4500</td>
+                </tr>
+                <tr>
+                    <td>Double Room</td>
+                    <td>3500</td>
+                </tr>
+                <tr>
+                    <td>Third Room</td>
+                    <td>2000</td>
+                </tr>
+                </table>
+                <h3> veg  : Rs.2000 ; Non Veg : Rs.2500 </h3>
+        </center>
+        <form action="index5.php" method="POST">
+            <center>
+                <table class="form_table">
+                    <tr>
+                        <td><label for="stu_name">Student's Name</label></td>
+                        <td><input type="text" id="stu_name" name = "stu_name" /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="stu_id">Student's ID</label></td>
+                        <td><input type="text" id="stu_id" name = "stu_id" /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="father_name">Father's Name</label></td>
+                        <td><input type="text" id="father_name" name = "father_name" /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Department">Department</label></td>
+                        <td><input type="text" id="Department" name = "Department" /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Mob_no">Mobile number</label></td>
+                        <td><input type="number" id="Mob_no" name = "Mob_no" /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Gender">Gender</label></td>
+                        <td>
+                            <select name = "dropdown">
+                                <option value = "Male" selected>Male</option>
+                                <option value = "Female" selected>Female</option>
+                                <option value = "Others" selected>Others</option>
+                             </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="Age">Age</label></td>
+                        <td><input type="number" id="Age" name = "Age" /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="DOB">Date of Birth</label></td>
+                        <td><input type="date" id="DOB" name = "DOB" /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email ID</label></td>
+                        <td><input type="email" id="email" name = "email" /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="room_id">Room ID</label></td>
+                        <td><input type="text" id="room_id" name = "room_id" /></td>
+                    </tr>
+                    <tr>
+                        <td><label>Food Status</label></td>
+                        <td><select name = "veg_t" id="t_Veg">
+                            <option value = "Non_Veg" selected>Non Veg</option>
+                            <option value = "Veg" selected>Veg</option>
+                         </select></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Build_no">Hostel Build no.</label></td>
+                        <td><input type="text" id="Build_no" name = "Build_no" /></td>
+                    </tr>
+                    <tr>
+                        <td>Room type</td>
+                        <td>
+                            <select name = "room_t" id="room_t">
+                                <option value = "Single_Room" selected>Single Room</option>
+                                <option value = "Double_Room" selected>Double Room</option>
+                                <option value = "Triple_Room" selected>Triple Room</option>
+                             </select>
+                        </td>
+                    </tr>
+                    
+                    </table>
+                    <button class="mbutton" onclick="sum()">Submit</button>
+                </center>
+            </form>
+        <script type="text/javascript">
+            function sum(){
+                var a, b;
+                
+                a = document.getElementById("t_Veg").value;
+                b = document.getElementById("room_t").value;
+    
+                if( a == "Veg"){
+                    a = 2000;
+                } else if( a == "Non_Veg"){
+                    a = 2500;
+                }
+                
+                if( b == "Single_Room"){
+                    b = 4500;
+                } else if( b == "Double_Room"){
+                    b = 3500;
+                } else {
+                    b = 2000;
+                }
+                
+                var sum = (a+b);
+                alert(a +" + "+ b +" = " + sum);
+                
+            }
+        </script>
+        </body>
+    </html>

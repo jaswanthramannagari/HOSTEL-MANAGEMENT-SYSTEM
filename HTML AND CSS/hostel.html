@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Hostel
+        </title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <table style="width: 100%; height: 10%;border: 2px solid black;text-align: center;">
+            <tr>
+                <td class="logo" ><img src="download.jfif"></td>
+                <td class="heading"><h1>COLLEGE OF ENGINEERING - GUINDY</h1><h4>Anna University, Chennai</h4></td>
+                <td class="logo" ><img src="CEGlogo.jpg"></td>
+            </tr>
+        </table><br><br>
+        <button class="back" onclick="document.location.href='admin.html'";>
+            BACK
+        </button><br><br>
+        <center>
+        <form action="index4.php" method="POST">
+            <table class="form_table">
+                <tr>
+                    <td><label for="Build_no">Hostel Build no.</label></td>
+                    <td><input type="text" id="Build_no" name = "Build_no" /></td>
+                </tr>
+                <tr>
+                    <td><label for="No_of_rooms">No. of rooms</label></td>
+                    <td><input type="number" id="No_of_rooms" name = "No_of_rooms" /></td>
+                </tr>
+                <tr>
+                    <td><label for="No_of_student">No. of student</label></td>
+                    <td><input type="number" id="No_of_student" name = "No_of_student" /></td>
+                </tr>
+                <tr>
+                    <td><label for="Annual_expense">Annual expense</label></td>
+                    <td><input type="number" id="Annual_expense" name = "Annual_expense" /></td>
+                </tr>
+                
+            </table><br><br>
+            <button class="mbutton">Submit</button>
+        </form>
+        <br><br>
+        <form action="hostel_display.php">
+            <button class="mbutton"> Hostel's display</button>
+        </form>
+        </center>
+    </body>
+</html>

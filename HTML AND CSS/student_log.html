@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Student login</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body style="background-image : url('clg01.jpg'); background-repeat: no-repeat; ">
+        <table style="width: 100%; height: auto; text-align: center; color: rgb(255, 255, 255);">
+            <tr>
+                <td class="logo" ><img src="download.jfif"></td>
+                <td ><h1 style="font-size: 30px;">COLLEGE OF ENGINEERING - GUINDY</h1><h4>Anna University, Chennai</h4></td>
+                <td class="logo" ><img src="CEGlogo.jpg"></td>
+            </tr>
+        </table><br><br>
+        <br><br>
+        <button class="back" onclick="document.location.href='main.html'";>
+            BACK
+        </button>
+        
+            <center>
+            <div class="frm">
+                <form action="stu_log_ind.php" method="POST">
+                    <table style=" border-collapse: collapse; height: auto;text-align: center;font-family: arial, sans-serif; background-color: whitesmoke;">
+                        <tr>
+                            <td><label for="stu_id">Student's ID</label></td>
+                            <td><input type="text"  id="stu_id" name = "stu_id" /></td>
+                        </tr>
+                        <tr>
+                            <td><label for="DOB">Date of Birth</label></td>
+                            <td><input type="date"  id="DOB" name = "DOB" /></td>
+                        </tr>
+                    </table>
+                    <button class="mbutton">Sign in</button>
+                    <h2 style="color: black;">___________________</h2>
+                </form>
+                <form method = "POST" action="student_entry.html">
+                    <button class="mbutton">Student Register</a></button>
+                </form>
+            </div>
+            </center>
+        
+    </body>
+</html>

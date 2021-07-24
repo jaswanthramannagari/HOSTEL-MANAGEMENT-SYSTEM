@@ -1,0 +1,136 @@
+
+td, th {
+    border: 1px solid darkslateblue;
+    text-align: center;
+    padding: 8px;
+   
+}
+.frm{  
+    border: solid gray 1px;  
+    width:25%;  
+    border-radius: 2px;  
+    margin:  auto;  
+    background: white;  
+    padding: 50px;
+}
+.h3{
+    font-family: arial, sans-serif;
+    color: darkslateblue;
+}
+
+
+
+.opt{
+    
+        float: left;
+        width: 30%;
+        height: 300px; /* only for demonstration, should be removed */
+        background: #ccc;
+        padding: 20px;
+      
+}
+.heading {
+    background-color: whitesmoke;
+    padding: 30px;
+    text-align: center;
+    font-size: 25px;
+    color: darkmagenta;
+    text-decoration: underline;
+}
+
+.article {
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color: #f1f1f1;
+    height: 300px; /* only for demonstration, should be removed */
+  }
+.table2{
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+}
+.logo{
+    width: 5%;
+    
+}
+.back{
+    background-color: purple;
+    padding: auto;
+    border: none;
+    color: white;
+    text-align:center;
+    width: 100px;
+    height:50px;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor : pointer;
+}
+
+.mtt{
+    color: navy;
+    text-decoration: underline;
+    text-decoration-color: navy;
+   
+}
+
+.table1 {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.form_table{
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    padding: auto;
+    border-color: black;
+    border-width: 2px;
+    background-color: whitesmoke;
+}
+.mbutton {
+    background-color: purple;
+    padding: auto;
+    border: none;
+    color: white;
+    text-align: center;
+    width: 250px;
+    height: 50px;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.mess_t{
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    text-align: right;
+    padding: 8px;
+}
+
+.Submit{
+    background-color: purple;
+    padding: auto;
+    border: none;
+    color: white;
+    text-align: center;
+    width: 150px;
+    height: 50px;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer; 
+}
+
+.abutton{
+    background-color: rgba(247, 242, 247, 0.849);
+    padding: auto;
+    border: none;
+    color: rgb(243, 11, 11);
+    font-size: 30px;
+    text-align: center;
+    width: 250px;
+    height: 150px;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+}
