@@ -1,0 +1,16 @@
+PRIMARY KEY
+TABLE NAME		COLUMN NAME
+mess_entry		memp_id
+hostel			hostel_build_no
+hostel_furniture		furniture_id
+room_ent			room_id
+student_entry		sid
+
+
+FOREIGN KEY
+TABLE NAME		COLUMN NAME		FOREIGNKEY
+hostel_furniture		room_id			room_ent(room_id)
+room_entry		build_no			hostel(build_no)
+student_entry		room_id			room_ent(room_id)
+student_entry		build_no			hostel(build_no)
+visitor			sid			student_entry(sid)
